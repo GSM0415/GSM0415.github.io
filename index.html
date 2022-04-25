@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>海洁尔电力设备公司</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./index-1.css" type="text/css" />
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-fixed-top my-navbar" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <span class="navbar-brand" href="#" style="font-size: 40px;"><b style="font-family: 霞鹜文楷等宽 Light;">靖江市海洁尔电力设备有限公司</b></span>
+                <img style="margin-left:15px ;" src="img/电话.png" width="55px" height="55px" />
+                <span><b style="font-size: 35px;font-family: 霞鹜文楷等宽 Light;">:15996058688</b></span>
+            </div>
+            <div class="collapse navbar-collapse navbar-right " id="example-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#" onclick="location='index.html'" class="navbar-1"><b style="font-size: 25px;">首页</b></a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="location='cpzx.html'"><b style="font-size: 25px;">产品中心</b></a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="location='gsjj.html'"><b style="font-size: 25px;">关于我们</b></a>
+                    </li>
+                    <li>
+                        <a href="#"><b style="font-size: 25px;">联系我们</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 图片 -->
+    <div class="bg container">
+        <section>
+            <img src="img/city.jpg" id="slider" class="a1-5">
+            <ul class="nav">
+                <li onclick="a1('img/city.jpg')" id='li1'><img src="img/city.jpg"></li>
+                <li onclick="a1('img/far.jpg')" id='li2'><img src="img/far.jpg"></li>
+                <li onclick="a1('img/mountains.jpg')" id='li3'><img src="img/mountains.jpg"></li>
+                <li onclick="a1('img/road.jpg')" id='li3'><img src="img/road.jpg"></li>
+            </ul>
+            <div class="ml9">
+                <span class="text-wrapper">
+						<span class="letters"><b style="font-family: 霞鹜文楷等宽 Light;">海洁尔电力设备公司</b></span>
+                </span>
+            </div>
+            <script>
+                function a1(imgsrc) {
+                    document.getElementById('slider').src = imgsrc
+                }
+            </script>
+        </section>
+    </div>
+    <!-- 图片 -->
+    <script>
+        var textWrapper = document.querySelector('.ml9 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+        anime.timeline({
+                loop: true
+            })
+            .add({
+                targets: '.ml9 .letter',
+                scale: [0, 1],
+                duration: 1500,
+                elasticity: 600,
+                delay: (el, i) => 45 * (i + 1)
+            }).add({
+                targets: '.ml9',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
+    <script>
+        $(window).scroll(function() {
+            if ($(".navbar").offset().top > 50) {
+                $(".navbar-fixed-top").addClass("top-nav");
+            } else {
+                $(".navbar-fixed-top").removeClass("top-nav");
+            }
+        })
+    </script>
+    <!-- 导航栏 -->
+
+
+
+    <!-- 定位栏 -->
+
+    <!-- 定位栏 -->
+
+    <b style="font-family: 霞鹜文楷等宽 Light;font-size: 60px;margin-left:850px;">公司介绍</b>
+    <!-- 公司介绍 -->
+    <div class="container a1">
+        <div class="a1-1" style="padding-left: 10px;">
+            <img src="img/公司.jpg" width="650px" height="500px" style="border-radius:15px ;" />
+        </div>
+        <div class="a1-2">
+            <p style="font-size: 40px;">
+                <b style="font-family: 霞鹜文楷等宽 Light;">靖江市海洁尔有限公司</b>
+            </p>
+        </div>
+        <div class="a1-3 a1-5">
+            <p style="font-size: 25px;line-height: 70px;" id='e'>靖江市海洁尔环保设备有限公司创建于<span style="color:#3c55a5;font-size: 45px;">1992</span>年，现拥有注册资金<span style="color:#3c55a5;font-size: 45px;">5000</span>万元<br>，技术力量雄厚，是生产暖通设备、空调配件、除尘净化设备的专业厂家,同时对<br>外承接空调工程的设计、咨询和安装工程。</p>
+            <a href="gsjj.html"><button type="button" class="a1-4">了解更多</button> </a>
+        </div>
+    </div>
+    <!-- 公司介绍 -->
+
+
+    <div>
+        <span><b style="font-family: 霞鹜文楷等宽 Light;font-size: 60px;margin-left:850px;margin-top: 100px;">产品一览</b></span>
+    </div>
+    <!-- 产品略览 -->
+    <div class="container a2">
+        <ul class="slider">
+            <input type="radio" id="control-1" name="control" checked>
+            <input type="radio" id="control-2" name="control">
+            <input type="radio" id="control-3" name="control">
+            <input type="radio" id="control-4" name="control">
+            <input type="radio" id="control-5" name="control">
+            <input type="radio" id="control-6" name="control">
+            <input type="radio" id="control-7" name="control">
+            <input type="radio" id="control-8" name="control">
+            <input type="radio" id="control-9" name="control">
+            <input type="radio" id="control-10" name="control">
+            <input type="radio" id="control-11" name="control">
+            <input type="radio" id="control-12" name="control">
+            <input type="radio" id="control-13" name="control">
+            <input type="radio" id="control-14" name="control">
+            <input type="radio" id="control-15" name="control">
+            <li class="slider">
+                <span class="a2-1"><b>减振器系列 1/15</b></span>
+                <br>
+                <div class="card loading" style="margin-left: 30px;">
+                    <div class="image">
+                        <img src="img/减震器系列/CJT型系列阻尼弹簧减振器.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>CJT型系列阻尼弹簧减振器</a></b></h1>
+                        <div class="des">
+                            为了隔离振动、冲击、降低噪音，常常在振动设备或精密仪表底部和支撑结构之间设置减振器，CJT型阻尼弹簧减振器，是一种较理想的减振器。
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/减震器系列/CJ型系列橡胶减振器.jpg">
+                    </div>
+                    <div class="content">
+                        <h1><b><a>CJ型系列橡胶减振器</a></b></h1>
+                        <div>
+                            采用该型号系列的减振器对各种机床、水泵、通风机、空气压缩机、冷冻机、柴油发电机等进行积极隔振，可取得满意的隔振效果。
+                            <br>
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/减震器系列/CJ型橡胶减振垫.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>CJ型橡胶减振垫</a></b></h1>
+                        <div class="des">
+                            为了隔离振动、冲击、降低噪音，常常将设备或仪表通过防振橡胶安装在基础或工作台上。CJ型橡胶隔层垫是一种较为理想的防振橡胶垫。
+                            <br>
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/减震器系列/SD型橡胶隔振垫.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>SD型橡胶隔振垫</a></b></h1>
+                        <div class="des">
+                            SD型减振垫：设计合理、结构新颖、剪切受力，国内首创，固有频率低于压缩型，应力均匀，抗滑性好，配方先进，不易老化，抗油性强，经久耐用。
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 30px; margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/减震器系列/TJ1型弹簧减振器.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>TJ1型弹簧减振器</a></b></h1>
+                        <div class="des">
+                            TJ1型弹簧减振器可作为通风机、鼓风机、水泵及其他设备的隔振元件。以减少设备对外界的影响，进行积极隔振。这种减振器具有结构简单，受力明确，自振频率低，隔振效果好，安装方便，性能可靠等特点。
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px; margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/减震器系列/TJ2三角等刚度减振器.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>TJ2三角等刚度减振器</a></b></h1>
+                        <div class="des">
+                            TJ2-15型TJ2-20型三向等刚度弹簧减振器可作为各种风机、泵、空气压缩机、空调机等设备的隔振元件，特别适用于L型无基础空压机隔振
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px; margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/减震器系列/SD型橡胶隔振垫.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>SD型橡胶隔振垫</a></b></h1>
+                        <div class="des">
+                            SD型减振垫：设计合理、结构新颖、剪切受力，国内首创，固有频率低于压缩型，应力均匀，抗滑性好，配方先进，不易老化，抗油性强，经久耐用。
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px; margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/减震器系列/可曲挠球体橡胶接头.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>可曲挠球体橡胶接头</a></b></h1>
+                        <div class="des">
+                            工程使用安装方便，有较大得阻尼、价格相当便宜，能吸收振动和噪声，它的应用已越来越广泛合理的组装一套橡胶接头可大幅度降低机械振动和结构传递噪声。
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-top: 20px;margin-left: 30px;">
+                    <div class="image">
+                        <img src="img/减震器系列/WHS型弹簧减振吊钩.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>WHS型弹簧减振吊钩</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/减震器系列/JH1型弹簧减振吊钩.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>JH1型弹簧减振吊钩</a></b></h1>
+                        <div class="des">
+                            JH1 型弹簧减振吊钩专用吊式风机盘管，它具有体积小、外型美观、减振性能好，能降低噪声、延长电机使用寿命。
+                            <a href="#" onclick="location='cpzx.html'"><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 除尘器系列 -->
+            <li class="slider">
+                <b class="a2-1">除尘器系列 2/15</b>
+                <br>
+                <div class="card loading" style="margin-left: 30px;">
+                    <div class="image">
+                        <img src="img/除尘器/JDC系列多管冲击式除尘器.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>JDC系列多管冲击式除尘器</a></b></h1>
+                        <div class="des">
+                            JDC-4-33-Ⅰ型多管冲击式除尘器，是根据国外有关技术资料，结合我国实际生产和环境保护工程的需要，由电力工业部华北电力设计院和我公司共同研制的一种新型湿式除尘设备。
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/除尘器/JZC系列回转反吹扁袋除尘器.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>JZC系列回转反吹扁袋除尘器</a></b></h1>
+                        <div class="des">
+                            JZC—Ⅲ型回转反吹扁袋除尘器是由一机部设计院设计处、研制成功的一种新型的技术先进的布袋除尘器。
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/除尘器/JBC系列扁布袋除尘机组.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>JBC系列扁布袋除尘机组</a></b></h1>
+                        <div class="des">
+                            JBC型除尘机组是根据我国实际生产和环境保护工程的需要，由电力工业部华北电力设计院和我公司共同研制的一种新型袋式除尘机组。
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/除尘器/JBL袋式除尘机组.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>JBL袋式除尘机组</a></b></h1>
+                        <div class="des">
+                            本除尘机组为干式除尘设备，包括直联风机和电动滤袋清灰机构。粉尘经灰斗落入拉出式抽屉中。
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 30px; margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/除尘器/CCJ冲激式除尘器.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>CCJ冲激式除尘器</a></b></h1>
+                        <div class="des">
+                            该除尘器主要用于非、无腐蚀性、温度不高于120℃的含尘气体的净化处理，同时也适用于矿山、化工、煤炭、冶金、电力等行业，经环保部门测试，该除尘器各项性能指标均达到了国内先进水平。 <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px; margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/除尘器/脉冲袋式除尘机组.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>脉冲袋式除尘机组</a></b></h1>
+                        <div class="des">
+                            脉冲袋式除尘机组是在我公司引进国外先进技术改制而成，它具有操作简单、净化效率高、处理气体能力大、性能稳定、维修工作量小等优点，广泛应用于电力、冶金、化工、机械、建材等行业。 <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 散流器 -->
+            <li class="slider">
+                <b class="a2-1">散流器系列 3/15</b>
+                <br>
+                <div class="card loading" style="margin-left: 30px;">
+                    <div class="image">
+                        <img src="img/散流器/四面吹散流器.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>FK-10、FK-31四面吹散流器（方形散流器）</a></b></h1>
+                        <div class="des"> <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/散流器/矩形散流器.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>FK-37矩形散流器</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/散流器/圆形散流器.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>FK-8、FK-9圆形散流器</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/散流器/电动.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>电动变流形散流器</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 消声器 -->
+            <li class="slider">
+                <b class="a2-1">消声器系列 4/15</b>
+                <br>
+                <div class="card loading" style="margin-left: 30px;">
+                    <div class="image">
+                        <img src="img/消声器/阻抗复合消声器T701-6.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>阻抗复合消声器T701-6</a></b></h1>
+                        <div class="des"> <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/消声器/阻性消声器T701-2～4.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>阻性消声器T701-2～4</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/消声器/WX微孔板消声器.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>WX微孔板消声器</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/消声器/消声弯头.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>消声弯头（超细玻璃棉）、GH短臂消声弯头</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 风口系列 -->
+            <li class="slider">
+                <b class="a2-1">风口系列 5/15</b>
+                <br>
+                <div class="card loading" style="margin-left: 30px;">
+                    <div class="image">
+                        <img src="img/风口/单层百叶式风口.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>FK-2,FK-20单层百叶式风口</a></b></h1>
+                        <div class="des"> <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/风口/开调节阀.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>FK-11多叶对开调节阀 FK-13圆形对开调节阀</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/风口/风口过滤器.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>Fk-5风口过滤器</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/风口/双层百叶式风口.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>FK-1、FK-19双层百叶式风口</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 30px; margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/风口/FK-47蛋格风口.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>FK-47蛋格风口</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/风口/FK-4、FK-27侧壁格栅式风口.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>FK-4、FK-27侧壁格栅式风口</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/风口/FK-12可开侧壁格栅式风口.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>FK-12可开侧壁格栅式风口</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/风口/FK-18条形风口.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>FK-18条形风口</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 30px; margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/风口/旋流风口.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>旋流风口</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/风口/球形喷口.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>球形喷口</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/风口/A形球形可调风口.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>A形球形可调风口</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/风口/厨房、卫生间外排气口.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>厨房、卫生间外排气口</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-top: 20px;margin-left: 30px;">
+                    <div class="image">
+                        <img src="img/风口/防火风口FFKF-70.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>防火风口FFKF-70</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/风口/板式排烟口.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>板式排烟口FPYB24/0.3 FPYBW24-0.3-280</a></b></h1>
+                        <div class="des">
+                            <a href="#" onclick="location='cpzx.html'"><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 风机盘管系列 -->
+            <li class="slider">
+                <b class="a2-1">风机盘管系列 6/15</b>
+                <br>
+                <div class="card loading" style="margin-left: 30px;">
+                    <div class="image">
+                        <img src="img/风机盘/Ⅰ.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>风机盘管（卧式暗装无回风箱FP-WA Ⅰ）</a></b></h1>
+                        <div class="des"> <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/风机盘/Ⅱ.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>风机盘管（卧式暗装薄型FP-WA Ⅱ）</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/风机盘/WAH.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>风机盘管（卧式暗装窄型FP-WAH）</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/风机盘/WM.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>风机盘管（卧式明装FP-WM）</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 30px; margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/风机盘/LA.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>风机盘管（立式暗装FP-LA）</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/风机盘/WAO.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>风机盘管（卧式暗装圆出风口FP-WAO）</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/风机盘/LM.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>风机盘管（立式明装FP-LM）</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/风机盘/KM.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>风机盘管（嵌入式明装FP-KM）</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 30px; margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/风机盘/四吹.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>FP-KMQ-卡式明装（四吹）</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 调节阀 -->
+            <li class="slider">
+                <b class="a2-1">调节阀系列 7/15</b>
+                <br>
+                <div class="card loading" style="margin-left: 30px;">
+                    <div class="image">
+                        <img src="img/调节阀/密闭式对开多叶风量调节阀.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>T308-1、2密闭式对开多叶风量调节阀</a></b></h1>
+                        <div class="des"> <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/调节阀/钢制蝶阀.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>T302-1～9钢制蝶阀</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/调节阀/YA型余压阀.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>YA型余压阀</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/调节阀/280.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>FFF-70A（280）</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 30px; margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/调节阀/全自动防烟防火阀.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>全自动防烟防火阀FFFZD24/0.4-70</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/调节阀/方形风管止回阀.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>T303-2方形风管止回阀</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/调节阀/气动式防火阀.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>气动式防火阀FFQ0.6MPa-70</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/调节阀/防烟防火阀.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>防烟防火阀FFJF24/0.3-70</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 30px; margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/调节阀/防烟防火阀F.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>防烟防火阀FFJYF24/0.3-70</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px; margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/调节阀/板式排烟口.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>板式排烟口FPYB24/0.3 FPYBW24-0.3-280</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 空气过滤器 -->
+            <li class="slider">
+                <b class="a2-1">空气过滤器系列 8/15</b>
+                <br>
+                <div class="card loading" style="margin-left: 30px;">
+                    <div class="image">
+                        <img src="img/空气过滤器/GKF系列高效静压箱、送风口.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>GKF系列高效静压箱、送风口</a></b></h1>
+                        <div class="des"> <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/空气过滤器/高效过滤器.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>高效过滤器（GK、GKW系列）</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/空气过滤器/高效空气过滤器.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>高效空气过滤器</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 空调器 -->
+            <li class="slider">
+                <b class="a2-1">空调器系列 9/15</b>
+                <br>
+                <div class="card loading" style="margin-left: 30px;">
+                    <div class="image">
+                        <img src="img/空调器/ZK-W.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>组合式空调机组（卧式ZK-W）</a></b></h1>
+                        <div class="des"> <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/空调器/ZK-D.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>组合式空调机组（叠式ZK-D）</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/空调器/ZK-JD.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>节能型全自动组合式空调机组（卧式ZK-JD）</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/空调器/BFP-D.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>柜式空调器（柜式吊顶BFP-D）</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 30px; margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/空调器/BFP-DB.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>柜式空调器（柜式吊顶超薄BFP-DB）</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/空调器/BFP-LM.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a> 柜式空调器（立柜式明装BFP-LM）</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/空调器/BFP-LA.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>柜式空调器（立柜式暗装BFP-LA）</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;margin-top: 20px;">
+                    <div class="image">
+                        <img src="img/空调器/BFP-WA.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>柜式空调器（卧式暗装BFP-WA）</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 玻璃钢风管系列 -->
+            <li class="slider">
+                <b class="a2-1">玻璃钢风管系列 10/15</b>
+                <br>
+                <div class="card loading" style="margin-left: 30px;">
+                    <div class="image">
+                        <img src="img/空调器/ZK-W.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>玻璃钢有机风管</a></b></h1>
+                        <div class="des"> <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/空调器/ZK-D.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>玻璃钢无机风管</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 金属软管 -->
+            <li class="slider">
+                <b class="a2-1">金属软管系列 11/15</b>
+                <br>
+                <div class="card loading" style="margin-left: 30px;">
+                    <div class="image">
+                        <img src="img/金属软管/JWT-II型通风软管.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>JWT-II型通风软管</a></b></h1>
+                        <div class="des"> <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/金属软管/JWT-II-F方型软管.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a> JWT-II-F方型软管</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 家用水冷空调器 -->
+            <li class="slider">
+                <b class="a2-1">家用水冷空调器系列 12/15</b>
+                <br>
+                <div class="card loading" style="margin-left: 30px;">
+                    <div class="image">
+                        <img src="img/家用水冷空调器/壁挂式（FPBG）性能参数表.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>壁挂式（FPBG）</a></b></h1>
+                        <div class="des"> <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/家用水冷空调器/立柱式（FPLZ）性能参数表.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a> 立柱式（FPLZ）</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="slider">
+                <b class="a2-1">防雨防沙百叶窗系列 13/15</b>
+                <br>
+                <div class="card loading" style="margin-left: 30px;">
+                    <div class="image">
+                        <img src="img/防雨/单层防雨百叶窗.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a>单层防雨百叶窗</a></b></h1>
+                        <div class="des"> <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/防雨/双层防雨调节百叶窗.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a> 立柱式（FPLZ）</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/防雨/单层调节百叶窗.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a> 单层调节百叶窗</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card loading" style="margin-left: 140px;">
+                    <div class="image">
+                        <img src="img/防雨/双层防沙调节百叶窗.jpg">
+                    </div>
+                    <div>
+                        <h1><b><a> 双层防沙调节百叶窗</a></b></h1>
+                        <div class="des">
+                            <a><b>--了解详细</b></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="slider">
+                <b class="a2-1">罐箱铝合金防滑步道人行走道 14/15</b>
+                <br>
+
+            </li>
+            <li class="slider">
+                <b class="a2-1">除尘器滤袋系列 15/15</b>
+                <br>
+
+            </li>
+            <div class="control-visible">
+                <label for="control-1" id="1" title="减振器系列"></label>
+                <label for="control-2" id="2" title="除尘器系列"></label>
+                <label for="control-3" id="3" title="散流器系列"></label>
+                <label for="control-4" id="4" title="消声器系列"></label>
+                <label for="control-5" id="5" title="风口系列"></label>
+                <label for="control-6" id="6" title="风机盘管系列"></label>
+                <label for="control-7" id="7" title="调节阀系列"></label>
+                <label for="control-8" id="8" title="空气过滤器系列"></label>
+                <label for="control-9" id="9" title="空调器系列"></label>
+                <label for="control-10" id="10" title="玻璃钢风管系列"></label>
+                <label for="control-11" id="11" title="金属软管系列"></label>
+                <label for="control-12" id="12" title="家用水冷空调器系列"></label>
+                <label for="control-13" id="13" title="防雨防沙百叶窗"></label>
+                <label for="control-14" id="14" title="罐箱铝合金防滑步道人行走道"></label>
+                <label for="control-15" id="15" title="除尘器滤袋系列"></label>
+            </div>
+        </ul>
+
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#1").click(function() {
+                $('.a2').animate({
+                    height: '170rem'
+                })
+            })
+        })
+        $(document).ready(function() {
+            $("#2").click(function() {
+                $('.a2').animate({
+                    height: '120rem'
+                })
+            })
+        })
+        $(document).ready(function() {
+            $("#3").click(function() {
+                $('.a2').animate({
+                    height: '80rem'
+                })
+            })
+        })
+        $(document).ready(function() {
+            $("#4").click(function() {
+                $('.a2').animate({
+                    height: '80rem'
+                })
+            })
+        })
+        $(document).ready(function() {
+            $("#5").click(function() {
+                $('.a2').animate({
+                    height: '200rem'
+                })
+            })
+        })
+        $(document).ready(function() {
+            $("#6").click(function() {
+                $('.a2').animate({
+                    height: '170rem'
+                })
+            })
+        })
+        $(document).ready(function() {
+            $("#7").click(function() {
+                $('.a2').animate({
+                    height: '170rem'
+                })
+            })
+        })
+        $(document).ready(function() {
+            $("#8").click(function() {
+                $('.a2').animate({
+                    height: '80rem'
+                })
+            })
+        })
+        $(document).ready(function() {
+            $("#9").click(function() {
+                $('.a2').animate({
+                    height: '120rem'
+                })
+            })
+        })
+        $(document).ready(function() {
+            $("#10").click(function() {
+                $('.a2').animate({
+                    height: '80rem'
+                })
+            })
+        })
+        $(document).ready(function() {
+            $("#11").click(function() {
+                $('.a2').animate({
+                    height: '80rem'
+                })
+            })
+        })
+        $(document).ready(function() {
+            $("#12").click(function() {
+                $('.a2').animate({
+                    height: '80rem'
+                })
+            })
+        })
+        $(document).ready(function() {
+            $("#13").click(function() {
+                $('.a2').animate({
+                    height: '80rem'
+                })
+            })
+        })
+        $(document).ready(function() {
+            $("#14").click(function() {
+                $('.a2').animate({
+                    height: '170rem'
+                })
+            })
+        })
+        $(document).ready(function() {
+            $("#15").click(function() {
+                $('.a2').animate({
+                    height: '170rem'
+                })
+            })
+        })
+    </script>
+    <!--  产品略览 -->
+
+
+
+    <!-- 宣传 -->
+    <div class="text-center c-1">
+        <h1 class="ml4">
+            <span class="letters letters-1">诚信经营</span>
+            <span class="letters letters-2">品质保障</span>
+            <span class="letters letters-3">专注专业</span>
+        </h1>
+    </div>
+    <script>
+        var ml4 = {};
+        ml4.opacityIn = [0, 1];
+        ml4.scaleIn = [0.2, 1];
+        ml4.scaleOut = 3;
+        ml4.durationIn = 800;
+        ml4.durationOut = 600;
+        ml4.delay = 500;
+
+        anime.timeline({
+                loop: true
+            })
+            .add({
+                targets: '.ml4 .letters-1',
+                opacity: ml4.opacityIn,
+                scale: ml4.scaleIn,
+                duration: ml4.durationIn
+            }).add({
+                targets: '.ml4 .letters-1',
+                opacity: 0,
+                scale: ml4.scaleOut,
+                duration: ml4.durationOut,
+                easing: "easeInExpo",
+                delay: ml4.delay
+            }).add({
+                targets: '.ml4 .letters-2',
+                opacity: ml4.opacityIn,
+                scale: ml4.scaleIn,
+                duration: ml4.durationIn
+            }).add({
+                targets: '.ml4 .letters-2',
+                opacity: 0,
+                scale: ml4.scaleOut,
+                duration: ml4.durationOut,
+                easing: "easeInExpo",
+                delay: ml4.delay
+            }).add({
+                targets: '.ml4 .letters-3',
+                opacity: ml4.opacityIn,
+                scale: ml4.scaleIn,
+                duration: ml4.durationIn
+            }).add({
+                targets: '.ml4 .letters-3',
+                opacity: 0,
+                scale: ml4.scaleOut,
+                duration: ml4.durationOut,
+                easing: "easeInExpo",
+                delay: ml4.delay
+            }).add({
+                targets: '.ml4',
+                opacity: 0,
+                duration: 500,
+                delay: 500
+            });
+    </script>
+    <!-- 宣传 -->
+    <div class="container-fluid b1-5">
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <span class="b1-7" style="font-family:  霞鹜文楷等宽 Light;"><b>靖江市海洁尔环保有限公司</b></span><br>
+            <p class="b1-7" style="font-family:  霞鹜文楷等宽 Light;font-weight: bold;">联系人：龚圣明</p><br>
+            <p class="b1-7" style="font-family:  霞鹜文楷等宽 Light;font-weight: bold;">联系电话：15996058688</p>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img class="b1-6" src="./img/二维码.jpg" />
+                <P style="color: aliceblue;font-size: 30px;font-weight: bold;">微信</P>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+</html>
